@@ -20,7 +20,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-fly-sky">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-fly-blue-dark">
             Quick Links
           </h2>
           <ul className="mt-4 space-y-2">
@@ -38,7 +38,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-fly-sky">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-fly-blue-dark">
             Contact
           </h2>
           <address className="mt-4 space-y-2 text-sm not-italic">
@@ -63,7 +63,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wider text-fly-sky">
+          <h2 className="text-sm font-semibold uppercase tracking-wider text-fly-blue-dark">
             Follow Us
           </h2>
           <ul className="mt-4 space-y-2 text-sm">
@@ -91,7 +91,7 @@ export function Footer() {
         </div>
       </Container>
 
-      <div className="border-t border-white/10">
+      <div className="border-t border-brand">
         <Container className="py-6">
           <p className="text-center text-xs text-slate-500">
             &copy; {new Date().getFullYear()} {siteConfig.name}. All rights

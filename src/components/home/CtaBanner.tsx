@@ -57,7 +57,7 @@ export function CtaBanner() {
           <h2 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
             Ready to Upgrade Your Business Communications?
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-on-dark-muted">
+          <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-emerald-50">
             Get a free consultation and custom quote tailored to your business
             needs. No obligation.
           </p>

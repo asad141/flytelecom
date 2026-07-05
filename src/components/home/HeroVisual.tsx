@@ -33,14 +33,14 @@ export function HeroVisual() {
         <Logo height={56} link={false} />
       </div>
 
-      <div className="absolute -left-4 top-12 animate-float-delayed rounded-xl border border-fly-blue/30 bg-fly-navy/90 px-4 py-3 shadow-lg">
-        <p className="text-xs font-semibold text-fly-sky">Network Uptime</p>
-        <p className="text-2xl font-bold text-white">99.99%</p>
+      <div className="absolute -left-4 top-12 animate-float-delayed rounded-xl border border-brand bg-surface-card px-4 py-3 shadow-lg">
+        <p className="text-xs font-semibold text-fly-blue-dark">Network Uptime</p>
+        <p className="text-2xl font-bold text-heading">99.99%</p>
       </div>
 
-      <div className="absolute -right-2 bottom-16 animate-float rounded-xl border border-fly-cyan/30 bg-fly-navy/90 px-4 py-3 shadow-lg">
-        <p className="text-xs font-semibold text-fly-sky">Support</p>
-        <p className="text-2xl font-bold text-white">24/7</p>
+      <div className="absolute -right-2 bottom-16 animate-float rounded-xl border border-brand bg-surface-card px-4 py-3 shadow-lg">
+        <p className="text-xs font-semibold text-fly-blue-dark">Support</p>
+        <p className="text-2xl font-bold text-heading">24/7</p>
       </div>
     </div>
   );

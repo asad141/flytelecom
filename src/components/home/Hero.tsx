@@ -14,10 +14,10 @@ export function Hero() {
 
       <Container className="relative grid items-center gap-12 py-12 lg:grid-cols-2 lg:gap-16 lg:py-16">
         <AnimateOnScroll direction="up">
-          <p className="mb-4 inline-block rounded-full border border-sky-300/40 bg-white/10 px-4 py-1.5 text-sm font-semibold text-white">
+          <p className="mb-4 inline-block rounded-full border border-fly-blue/30 bg-fly-blue/10 px-4 py-1.5 text-sm font-semibold text-fly-blue-dark">
             Trusted by 2,500+ businesses
           </p>
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-heading sm:text-5xl lg:text-6xl xl:text-7xl">
             {heroContent.headline.replace(heroContent.headlineHighlight, "")}
             <span className="text-accent-light">{heroContent.headlineHighlight}</span>
           </h1>
