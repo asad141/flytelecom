@@ -2,7 +2,6 @@ import { AboutPreview, CtaBanner } from "@/components/home/CtaBanner";
 import { Hero } from "@/components/home/Hero";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { StatsBar, WhyChooseUs } from "@/components/home/WhyChooseUs";
-import { StickySection } from "@/components/ui/StickySection";
 import { siteConfig } from "@/data/site";
 import { createMetadata } from "@/lib/seo";
 
@@ -14,25 +13,25 @@ export const metadata = createMetadata({
 
 export default function HomePage() {
   return (
-    <div className="home-scroll">
-      <StickySection index={1} className="bg-brand-hero text-on-dark" id="hero">
+    <div>
+      <section className="bg-brand-hero py-8 text-on-dark sm:py-12" id="hero">
         <Hero />
-      </StickySection>
-      <StickySection index={2} className="bg-brand-stats" id="stats">
+      </section>
+      <section className="bg-brand-stats py-4 sm:py-6" id="stats">
         <StatsBar />
-      </StickySection>
-      <StickySection index={3} className="bg-surface" id="services">
+      </section>
+      <section className="bg-surface py-8 sm:py-12" id="services">
         <ServicesPreview />
-      </StickySection>
-      <StickySection index={4} className="bg-section-alt" id="why-us">
+      </section>
+      <section className="bg-section-alt py-8 sm:py-12" id="why-us">
         <WhyChooseUs />
-      </StickySection>
-      <StickySection index={5} className="bg-surface-elevated" id="about">
+      </section>
+      <section className="bg-surface-elevated py-8 sm:py-12" id="about">
         <AboutPreview />
-      </StickySection>
-      <StickySection index={6} className="bg-brand-cta" id="contact-cta">
+      </section>
+      <section className="bg-brand-cta py-8 sm:py-12" id="contact-cta">
         <CtaBanner />
-      </StickySection>
+      </section>
     </div>
   );
 }

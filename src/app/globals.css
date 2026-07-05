@@ -41,10 +41,6 @@
   --font-mono: var(--font-geist-mono);
 }
 
-html {
-  scroll-snap-type: y proximity;
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
@@ -135,29 +131,6 @@ body.mobile-menu-open main,
 body.mobile-menu-open footer {
   visibility: hidden;
   pointer-events: none;
-}
-
-.home-scroll {
-  scroll-snap-type: y proximity;
-}
-
-.sticky-section {
-  position: sticky;
-  top: var(--header-height);
-  display: flex;
-  min-height: calc(100vh - var(--header-height));
-  flex-direction: column;
-  justify-content: center;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-}
-
-@media (max-width: 640px) {
-  .sticky-section {
-    min-height: auto;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
 }
 
 .bg-brand-hero {
