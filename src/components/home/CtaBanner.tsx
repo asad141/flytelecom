@@ -50,14 +50,14 @@ export function AboutPreview() {
 export function CtaBanner() {
   return (
     <div className="relative w-full overflow-hidden py-16">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(16,185,129,0.15),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(139,92,246,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(59,130,246,0.15),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(6,182,212,0.12),transparent_50%)]" />
       <Container className="relative text-center">
         <AnimateOnScroll>
           <h2 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
             Ready to Upgrade Your Business Communications?
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-emerald-50">
+          <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-blue-100">
             Get a free consultation and custom quote tailored to your business
             needs. No obligation.
           </p>

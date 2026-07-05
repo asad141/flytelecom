@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { siteConfig } from "@/data/site";
 import { cn } from "@/lib/cn";
@@ -6,7 +7,7 @@ type LogoProps = {
   className?: string;
   height?: number;
   link?: boolean;
-  variant?: "default" | "footer";
+  variant?: "default" | "footer" | "light";
 };
 
 export function Logo({
@@ -15,20 +16,21 @@ export function Logo({
   link = true,
   variant = "default",
 }: LogoProps) {
-  const size = variant === "footer" ? height * 0.5 : height * 0.52;
+  const useLight = variant === "footer" || variant === "light";
+  const src = useLight ? siteConfig.logo.srcLight : siteConfig.logo.src;
+  const displayHeight = variant === "footer" ? height : height;
 
   const mark = (
-    <span
-      className={cn(
-        "inline-flex select-none items-baseline font-bold leading-none tracking-tight",
-        className
-      )}
-      style={{ fontSize: `${size}px` }}
+    <Image
+      src={src}
+      alt={siteConfig.logo.alt}
+      width={siteConfig.logo.width}
+      height={siteConfig.logo.height}
+      className={cn("h-auto w-auto object-contain", className)}
+      style={{ height: displayHeight, width: "auto" }}
+      priority={variant === "default"}
       aria-hidden={link ? undefined : true}
-    >
-      <span className="text-fly-blue">FLY</span>
-      <span className="text-foreground">TELECOM</span>
-    </span>
+    />
   );
 
   if (!link) {

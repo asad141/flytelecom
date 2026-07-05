@@ -7,19 +7,21 @@ import { Container } from "@/components/ui/Container";
 export function Hero() {
   return (
     <div className="relative w-full overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_50%,rgba(16,185,129,0.2),transparent_50%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(139,92,246,0.12),transparent_45%)]" />
-      <div className="animate-glow-pulse absolute -right-20 -top-20 h-80 w-80 rounded-full bg-fly-blue/20 blur-3xl" />
-      <div className="animate-glow-pulse absolute -bottom-16 -left-16 h-72 w-72 rounded-full bg-fly-cyan/15 blur-3xl" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_15%_50%,rgba(59,130,246,0.2),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(6,182,212,0.15),transparent_45%)]" />
+      <div className="animate-glow-pulse absolute -right-20 -top-20 h-80 w-80 rounded-full bg-fly-blue/25 blur-3xl" />
+      <div className="animate-glow-pulse absolute -bottom-16 -left-16 h-72 w-72 rounded-full bg-fly-cyan/20 blur-3xl" />
 
       <Container className="relative grid items-center gap-12 py-12 lg:grid-cols-2 lg:gap-16 lg:py-16">
         <AnimateOnScroll direction="up">
-          <p className="mb-4 inline-block rounded-full border border-fly-blue/30 bg-fly-blue/10 px-4 py-1.5 text-sm font-semibold text-fly-blue-dark">
+          <p className="mb-4 inline-block rounded-full border border-fly-sky/40 bg-white/10 px-4 py-1.5 text-sm font-semibold text-fly-sky">
             Trusted by 2,500+ businesses
           </p>
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-heading sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
             {heroContent.headline.replace(heroContent.headlineHighlight, "")}
-            <span className="text-accent-light">{heroContent.headlineHighlight}</span>
+            <span className="bg-gradient-to-r from-fly-sky via-white to-fly-cyan bg-clip-text text-transparent">
+              {heroContent.headlineHighlight}
+            </span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-on-dark-muted sm:text-xl">
             {heroContent.subheadline}

@@ -7,6 +7,7 @@ export const siteConfig = {
   locale: "en_US",
   logo: {
     src: "/logo.svg",
+    srcLight: "/logo-light.svg",
     alt: "Fly Telecom — Business Internet, VoIP & Cloud Communications",
     width: 320,
     height: 64,

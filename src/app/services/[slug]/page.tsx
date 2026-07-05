@@ -47,24 +47,24 @@ export default async function ServiceDetailPage({ params }: Props) {
       <JsonLd data={[createServiceJsonLd(service), breadcrumbs]} />
 
       <section className="bg-brand-hero relative overflow-hidden py-20 text-on-dark lg:py-24">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(16,185,129,0.12),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_80%,rgba(139,92,246,0.08),transparent_45%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(59,130,246,0.2),transparent_55%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_10%_80%,rgba(6,182,212,0.12),transparent_45%)]" />
         <Container className="relative">
-          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-fly-blue-dark">
+          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-fly-sky">
             <ol className="flex items-center gap-2">
               <li>
-                <Link href="/" className="hover:text-fly-blue">
+                <Link href="/" className="hover:text-white">
                   Home
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
               <li>
-                <Link href="/services" className="hover:text-fly-blue">
+                <Link href="/services" className="hover:text-white">
                   Services
                 </Link>
               </li>
               <li aria-hidden="true">/</li>
-              <li className="font-medium text-heading">{service.title}</li>
+              <li className="text-white">{service.title}</li>
             </ol>
           </nav>
           <div className="flex items-start gap-6">
