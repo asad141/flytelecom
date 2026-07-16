@@ -1,4 +1,4 @@
-import { Logo } from "@/components/ui/Logo";
+import Image from "next/image";
 
 export function HeroVisual() {
   return (
@@ -29,13 +29,19 @@ export function HeroVisual() {
         </svg>
       </div>
 
-      <div className="animate-float relative z-10 px-4">
-        <Logo height={56} link={false} />
+      <div className="animate-float relative z-10 h-[85%] w-[85%]">
+        <Image
+          src="/hero-image.png"
+          alt="Fly Telecom SMS messaging shown on a smartphone"
+          fill
+          className="object-contain drop-shadow-2xl"
+          preload
+        />
       </div>
 
       <div className="absolute -left-4 top-12 animate-float-delayed rounded-xl border border-fly-blue/30 bg-fly-navy/90 px-4 py-3 shadow-lg">
-        <p className="text-xs font-semibold text-fly-sky">Network Uptime</p>
-        <p className="text-2xl font-bold text-white">99.99%</p>
+        <p className="text-xs font-semibold text-fly-sky">Global Routes</p>
+        <p className="text-2xl font-bold text-white">A2P SMS</p>
       </div>
 
       <div className="absolute -right-2 bottom-16 animate-float rounded-xl border border-fly-cyan/30 bg-fly-navy/90 px-4 py-3 shadow-lg">

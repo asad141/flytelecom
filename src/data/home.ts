@@ -1,17 +1,17 @@
 export const heroContent = {
-  headline: "Connect Your Business to What Matters",
-  headlineHighlight: "What Matters",
+  headline: "The Messaging Partner That Connects Your Business to the World",
+  headlineHighlight: "Connects Your Business to the World",
   subheadline:
-    "Enterprise-grade internet, VoIP, and cloud communications — delivered with the reliability your business deserves.",
+    "Fly Telecom is a trusted global provider of A2P and omnichannel messaging services. Backed by deep industry expertise, we help businesses deliver SMS, WhatsApp, Viber, Telegram, and RCS messages reliably, driving real value and growth for our partners worldwide.",
   ctaPrimary: { label: "Get a Free Quote", href: "/contact" },
   ctaSecondary: { label: "Explore Services", href: "/services" },
 };
 
 export const stats = [
-  { value: "15+", label: "Years of Experience" },
-  { value: "2,500+", label: "Businesses Served" },
-  { value: "99.99%", label: "Network Uptime" },
-  { value: "24/7", label: "Expert Support" },
+  { value: "99.9%", label: "Delivery Reliability" },
+  { value: "200+", label: "Global Network Connections" },
+  { value: "100+", label: "Carrier Partners" },
+  { value: "24/7", label: "Technical Support" },
 ];
 
 export const whyChooseUs = [

@@ -7,8 +7,8 @@ import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 import { Container } from "@/components/ui/Container";
 
 export const metadata = createMetadata({
-  title: "Telecom Services",
-  description: `Explore ${siteConfig.name} services — business internet, VoIP, cloud PBX, SD-WAN, managed IT, and unified communications.`,
+  title: "Messaging Services",
+  description: `Explore ${siteConfig.name} messaging services — A2P SMS, SMS, WhatsApp, Viber, Telegram, and RCS.`,
   path: "/services",
 });
 
@@ -17,7 +17,7 @@ export default function ServicesPage() {
     <>
       <PageHero
         title="Our Services"
-        description="From high-speed internet to unified communications, we provide end-to-end telecom solutions tailored to your business."
+        description="Whatever channel your customers prefer, Fly Telecom delivers your messages reliably and at scale."
       />
 
       <section className="bg-surface py-24">

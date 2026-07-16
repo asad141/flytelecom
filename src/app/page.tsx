@@ -26,9 +26,9 @@ export default function HomePage() {
       <section className="bg-section-alt py-8 sm:py-12" id="why-us">
         <WhyChooseUs />
       </section>
-      <section className="bg-surface-elevated py-8 sm:py-12" id="about">
+      {/* <section className="bg-surface-elevated py-8 sm:py-12" id="about">
         <AboutPreview />
-      </section>
+      </section> */}
       <section className="bg-brand-cta py-8 sm:py-12" id="contact-cta">
         <CtaBanner />
       </section>

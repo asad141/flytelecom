@@ -11,7 +11,7 @@ export function ServicesPreview() {
         <AnimateOnScroll>
           <SectionHeading
             title="Our Services"
-            subtitle="Comprehensive telecom solutions designed to keep your business connected and competitive."
+            subtitle="Whatever channel your customers prefer, FLY Telecom delivers your messages reliably and at scale."
           />
         </AnimateOnScroll>
 

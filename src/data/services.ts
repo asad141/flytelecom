@@ -9,94 +9,94 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "business-internet",
-    title: "Business Internet",
+    slug: "a2p-sms",
+    title: "A2P SMS",
     shortDescription:
-      "Dedicated fiber and broadband connections with guaranteed uptime for your operations.",
+      "Send OTPs, alerts and confirmations straight from your application to your customers' phones.",
     description:
-      "Our business internet solutions provide dedicated bandwidth, SLA-backed uptime, and 24/7 support. Whether you need fiber, fixed wireless, or redundant connections, Fly Telecom keeps your business connected.",
+      "Fly Telecom's Application-to-Person (A2P) SMS platform lets your systems send one-time passcodes, transactional alerts, and account notifications directly to customer handsets in real time. Built for high-volume, mission-critical messages that need to land fast and reliably.",
     features: [
-      "Dedicated fiber up to 10 Gbps",
-      "99.99% uptime SLA",
-      "Static IP addresses",
-      "24/7 network monitoring",
+      "Real-time OTP & 2FA delivery",
+      "Priority routing for critical alerts",
+      "99%+ delivery rates worldwide",
+      "Detailed delivery receipts & logs",
     ],
-    icon: "🌐",
+    icon: "📤",
   },
   {
-    slug: "voip-phone-systems",
-    title: "VoIP Phone Systems",
+    slug: "sms",
+    title: "SMS",
     shortDescription:
-      "Cloud-based phone systems with advanced features at a fraction of traditional costs.",
+      "Reach any handset instantly with direct, universal text messaging — no app required.",
     description:
-      "Replace legacy PBX systems with our modern VoIP platform. Get unlimited calling, auto-attendant, call recording, and seamless mobile integration — all managed from a simple web dashboard.",
+      "Reach any mobile handset on the planet with Fly Telecom SMS — no app, no data plan, no barriers. Our direct carrier connections deliver your messages instantly, whether you're sending a single text or millions.",
     features: [
-      "Unlimited domestic calling",
-      "Auto-attendant & IVR",
-      "Mobile & desktop apps",
-      "Call analytics dashboard",
+      "Global carrier connectivity",
+      "Two-way messaging support",
+      "Sender ID & short code options",
+      "Simple REST API integration",
     ],
-    icon: "📞",
+    icon: "✉️",
   },
   {
-    slug: "cloud-pbx",
-    title: "Cloud PBX",
+    slug: "whatsapp",
+    title: "WhatsApp",
     shortDescription:
-      "Fully managed private branch exchange hosted in the cloud with zero hardware.",
+      "Connect with customers on the messaging app they already use every day.",
     description:
-      "Fly Telecom Cloud PBX eliminates on-premise hardware while delivering enterprise-grade telephony. Scale extensions instantly, integrate with CRM tools, and pay only for what you use.",
+      "Meet your customers where they already are. Fly Telecom's WhatsApp Business API integration lets you send notifications, support rich media, and hold two-way conversations on the world's most popular messaging app.",
     features: [
-      "No hardware to maintain",
-      "CRM integrations",
-      "Scalable extensions",
-      "Disaster recovery built-in",
-    ],
-    icon: "☁️",
-  },
-  {
-    slug: "sd-wan",
-    title: "SD-WAN",
-    shortDescription:
-      "Software-defined networking that optimizes traffic across multiple links.",
-    description:
-      "Our SD-WAN solution intelligently routes traffic across MPLS, broadband, and LTE links. Reduce costs, improve application performance, and gain centralized visibility across all your branch locations.",
-    features: [
-      "Multi-link failover",
-      "Application-aware routing",
-      "Centralized management",
-      "Built-in security",
-    ],
-    icon: "🔗",
-  },
-  {
-    slug: "managed-it",
-    title: "Managed IT Services",
-    shortDescription:
-      "End-to-end IT support so your team can focus on what matters most.",
-    description:
-      "From help desk to infrastructure management, our managed IT team acts as an extension of your business. Proactive monitoring, patch management, and strategic planning included.",
-    features: [
-      "24/7 help desk",
-      "Proactive monitoring",
-      "Cybersecurity suite",
-      "Strategic IT planning",
-    ],
-    icon: "🛡️",
-  },
-  {
-    slug: "unified-communications",
-    title: "Unified Communications",
-    shortDescription:
-      "Video, chat, and voice in one platform for seamless team collaboration.",
-    description:
-      "Bring your team together with Fly Telecom Unified Communications. HD video conferencing, team messaging, file sharing, and presence — all integrated into a single, secure platform.",
-    features: [
-      "HD video conferencing",
-      "Team messaging",
-      "Screen sharing",
-      "Calendar integration",
+      "Verified business profile",
+      "Rich media & template messages",
+      "Two-way customer conversations",
+      "Chatbot & CRM integrations",
     ],
     icon: "💬",
+  },
+  {
+    slug: "viber",
+    title: "Viber",
+    shortDescription:
+      "Deliver branded business messages to Viber's large, active user base.",
+    description:
+      "Tap into Viber's large, highly engaged user base with branded business messages. Fly Telecom's Viber integration supports promotional broadcasts, transactional alerts, and rich media at scale.",
+    features: [
+      "Branded sender profiles",
+      "Promotional & transactional messaging",
+      "Rich media support",
+      "Regional reach across Viber's user base",
+    ],
+    icon: "💬",
+  },
+  {
+    slug: "telegram",
+    title: "Telegram",
+    shortDescription:
+      "Send fast, secure updates and support through Telegram's business channel.",
+    description:
+      "Deliver fast, secure updates and support through Telegram's business messaging channel. Fly Telecom's Telegram integration is ideal for time-sensitive alerts, customer support, and community engagement.",
+    features: [
+      "End-to-end secure delivery",
+      "Bot & channel integrations",
+      "Fast, low-latency delivery",
+      "Rich formatting & media support",
+    ],
+    icon: "✈️",
+  },
+  {
+    slug: "rcs",
+    title: "RCS",
+    shortDescription:
+      "Deliver rich, verified messages with buttons and media, right in the native inbox.",
+    description:
+      "Rich Communication Services (RCS) brings verified branding, interactive buttons, carousels, and rich media directly into your customers' native messaging inbox — no app download required. Fly Telecom's RCS platform is the next generation of business messaging.",
+    features: [
+      "Verified sender branding",
+      "Interactive buttons & carousels",
+      "Rich media & read receipts",
+      "Native inbox delivery, no app needed",
+    ],
+    icon: "📱",
   },
 ];
 
