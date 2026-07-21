@@ -13,7 +13,7 @@ export const metadata = createMetadata({
 
 export default function ContactPage() {
   const { contact } = siteConfig;
-  const fullAddress = `${contact.address.street}, ${contact.address.city}, ${contact.address.state} ${contact.address.zip}`;
+  const fullAddress = `${contact.address.street}, ${contact.address.city}${contact.address.state ? `, ${contact.address.state}` : ""} ${contact.address.zip}, ${contact.address.country}`;
 
   return (
     <>

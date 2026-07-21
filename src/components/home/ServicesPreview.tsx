@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
 import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
@@ -23,12 +24,22 @@ export function ServicesPreview() {
                   <div
                     className={`card-gradient-${index % 6} relative flex h-36 items-center justify-center`}
                   >
-                    <span
-                      className="text-5xl drop-shadow-sm transition-transform duration-500 group-hover:scale-110"
-                      aria-hidden="true"
-                    >
-                      {service.icon}
-                    </span>
+                    {service.image ? (
+                      <Image
+                        src={service.image}
+                        alt={service.title}
+                        width={72}
+                        height={72}
+                        className="object-contain drop-shadow-sm transition-transform duration-500 group-hover:scale-110"
+                      />
+                    ) : (
+                      <span
+                        className="text-5xl drop-shadow-sm transition-transform duration-500 group-hover:scale-110"
+                        aria-hidden="true"
+                      >
+                        {service.icon}
+                      </span>
+                    )}
                   </div>
                   <div className="flex flex-1 flex-col p-7">
                     <h3 className="text-xl font-semibold text-heading">

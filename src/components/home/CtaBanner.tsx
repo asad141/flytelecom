@@ -47,23 +47,25 @@ export function AboutPreview() {
   );
 }
 
-export function CtaBanner() {
+export function MidCtaBanner() {
   return (
     <div className="relative w-full overflow-hidden py-16">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(16,185,129,0.15),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_50%,rgba(139,92,246,0.1),transparent_50%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(16,185,129,0.12),transparent_55%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_50%,rgba(139,92,246,0.08),transparent_50%)]" />
       <Container className="relative text-center">
         <AnimateOnScroll>
           <h2 className="text-2xl font-bold text-white sm:text-3xl lg:text-4xl">
-            Ready to Upgrade Your Business Communications?
+            Stop losing messages to bad routing
           </h2>
           <p className="mx-auto mt-5 max-w-2xl text-lg font-medium text-on-dark-muted">
-            Get a free consultation and custom quote tailored to your business
-            needs. No obligation.
+            Tell us your use case and we&apos;ll hand back a routing plan and
+            quote within a day.
+            <br />
+            SMS, WhatsApp, Viber, Telegram &amp; RCS
           </p>
           <Link
             href="/contact"
-            className="btn-shine btn-accent mt-10 inline-flex items-center justify-center rounded-xl px-10 py-4 text-sm font-semibold transition-transform hover:scale-[1.02]"
+            className="btn-shine btn-primary btn-ripple mt-10 inline-flex items-center justify-center rounded-xl px-10 py-4 text-sm font-semibold transition-transform hover:scale-[1.02]"
           >
             Contact Us Today
           </Link>
@@ -72,3 +74,4 @@ export function CtaBanner() {
     </div>
   );
 }
+

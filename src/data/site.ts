@@ -13,13 +13,13 @@ export const siteConfig = {
   },
   contact: {
     phone: "+1 (555) 123-4567",
-    email: "hello@flytelecom.com",
+    email: "Info@flytelecom.com",
     address: {
-      street: "123 Telecom Avenue",
-      city: "New York",
-      state: "NY",
-      zip: "10001",
-      country: "US",
+      street: "61 Park Lane, Hornchurch",
+      city: "London",
+      state: "",
+      zip: "RM11 1BH",
+      country: "United Kingdom",
     },
   },
   social: {

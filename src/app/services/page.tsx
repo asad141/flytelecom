@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { services } from "@/data/services";
 import { siteConfig } from "@/data/site";
@@ -30,12 +31,22 @@ export default function ServicesPage() {
                     <div
                       className={`card-gradient-${index % 6} relative flex h-40 items-center justify-center`}
                     >
-                      <span
-                        className="text-6xl transition-transform duration-500 group-hover:scale-110"
-                        aria-hidden="true"
-                      >
-                        {service.icon}
-                      </span>
+                      {service.image ? (
+                        <Image
+                          src={service.image}
+                          alt={service.title}
+                          width={80}
+                          height={80}
+                          className="object-contain drop-shadow-sm transition-transform duration-500 group-hover:scale-110"
+                        />
+                      ) : (
+                        <span
+                          className="text-6xl transition-transform duration-500 group-hover:scale-110"
+                          aria-hidden="true"
+                        >
+                          {service.icon}
+                        </span>
+                      )}
                     </div>
                     <div className="flex flex-1 flex-col p-8">
                       <h2 className="text-2xl font-semibold text-heading">

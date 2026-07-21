@@ -1,12 +1,14 @@
+import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 
 type PageHeroProps = {
   title: string;
   description: string;
+  footer?: React.ReactNode;
   children?: React.ReactNode;
 };
 
-export function PageHero({ title, description, children }: PageHeroProps) {
+export function PageHero({ title, description, footer, children }: PageHeroProps) {
   return (
     <section className="bg-brand-hero relative overflow-hidden py-20 text-white lg:py-24">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(16,185,129,0.2),transparent_55%)]" />
@@ -20,6 +22,11 @@ export function PageHero({ title, description, children }: PageHeroProps) {
         <p className="mt-6 max-w-3xl text-lg leading-relaxed text-on-dark-muted lg:text-xl">
           {description}
         </p>
+        {footer && (
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-on-dark-muted lg:text-xl">
+            {footer}
+          </p>
+        )}
       </Container>
     </section>
   );

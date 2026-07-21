@@ -1,7 +1,7 @@
 export const aboutContent = {
   title: "About Fly Telecom",
   intro:
-    "Fly Telecom was founded with a simple mission: make enterprise-grade telecom accessible to every business. What started as a local ISP has grown into a full-service communications provider serving thousands of clients nationwide.",
+    "Fly Telecom is a global supplier of A2P and omnichannel messaging services, helping businesses reach customers over SMS, WhatsApp, Viber, Telegram, and RCS. Our network spans 200+ global connections and 250+ carrier partners, delivering 99.9% reliability even at peak volume, backed by transparent pricing and 24/7 support from real engineers, not a queue.",
   mission:
     "We believe reliable connectivity is the foundation of modern business. Our team of engineers, account managers, and support specialists work together to deliver solutions that just work — so you can focus on growing your company.",
   values: [

@@ -16,24 +16,24 @@ export const stats = [
 
 export const whyChooseUs = [
   {
-    title: "Dedicated Support",
+    title: "Honest Approach",
     description:
-      "Real humans, real fast. Our support team is available around the clock with average response times under 5 minutes.",
+      "Clear pricing and straightforward terms, with no hidden costs along the way.",
   },
   {
-    title: "Transparent Pricing",
+    title: "SMPP Integration",
     description:
-      "No hidden fees, no surprise charges. You get a clear quote upfront and pay only for what you need.",
+      "Direct SMPP connectivity for high-volume senders who need a fast, stable binding straight into our messaging platform.",
   },
   {
-    title: "Enterprise-Grade Infrastructure",
+    title: "Local teams, global reach",
     description:
-      "Our network is built on carrier-grade hardware with redundant paths and proactive monitoring.",
+      "100+ carrier partnerships and on-the-ground teams who know our market's rules and routes.",
   },
   {
-    title: "Local Expertise",
+    title: "Professional Team",
     description:
-      "We understand your market. Our local teams provide on-site support when you need it most.",
+      "Real engineers, not a ticket queue only. Average response under 10 minutes, day or night.",
   },
 ];
 

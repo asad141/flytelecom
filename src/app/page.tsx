@@ -1,4 +1,5 @@
-import { AboutPreview, CtaBanner } from "@/components/home/CtaBanner";
+import { AboutPreview, MidCtaBanner } from "@/components/home/CtaBanner";
+import { GlobalMessaging } from "@/components/home/GlobalMessaging";
 import { Hero } from "@/components/home/Hero";
 import { ServicesPreview } from "@/components/home/ServicesPreview";
 import { StatsBar, WhyChooseUs } from "@/components/home/WhyChooseUs";
@@ -20,6 +21,9 @@ export default function HomePage() {
       <section className="bg-brand-stats py-4 sm:py-6" id="stats">
         <StatsBar />
       </section>
+      <section className="bg-surface py-4 sm:py-8" id="global-messaging">
+        <GlobalMessaging />
+      </section>
       <section className="bg-surface py-8 sm:py-12" id="services">
         <ServicesPreview />
       </section>
@@ -29,9 +33,10 @@ export default function HomePage() {
       {/* <section className="bg-surface-elevated py-8 sm:py-12" id="about">
         <AboutPreview />
       </section> */}
-      <section className="bg-brand-cta py-8 sm:py-12" id="contact-cta">
-        <CtaBanner />
+      <section className="bg-brand-cta py-8 sm:py-12" id="mid-cta">
+        <MidCtaBanner />
       </section>
+
     </div>
   );
 }

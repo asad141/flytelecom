@@ -5,6 +5,7 @@ export type Service = {
   description: string;
   features: string[];
   icon: string;
+  image?: string;
 };
 
 export const services: Service[] = [
@@ -22,6 +23,7 @@ export const services: Service[] = [
       "Detailed delivery receipts & logs",
     ],
     icon: "📤",
+    image: "/A2P LOGO.png",
   },
   {
     slug: "sms",
@@ -37,6 +39,7 @@ export const services: Service[] = [
       "Simple REST API integration",
     ],
     icon: "✉️",
+    image: "/SMS LOGO.png",
   },
   {
     slug: "whatsapp",
@@ -52,6 +55,7 @@ export const services: Service[] = [
       "Chatbot & CRM integrations",
     ],
     icon: "💬",
+    image: "/WHATSAPP LOGO.png",
   },
   {
     slug: "viber",
@@ -67,6 +71,7 @@ export const services: Service[] = [
       "Regional reach across Viber's user base",
     ],
     icon: "💬",
+    image: "/VIBER LOGO.png",
   },
   {
     slug: "telegram",
@@ -82,6 +87,7 @@ export const services: Service[] = [
       "Rich formatting & media support",
     ],
     icon: "✈️",
+    image: "/TELEGRAM LOGO.png",
   },
   {
     slug: "rcs",
@@ -97,6 +103,7 @@ export const services: Service[] = [
       "Native inbox delivery, no app needed",
     ],
     icon: "📱",
+    image: "/RCS LOGO.png",
   },
 ];
 

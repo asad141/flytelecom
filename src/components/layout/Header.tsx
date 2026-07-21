@@ -9,7 +9,7 @@ export function Header() {
     <header className="sticky top-0 z-[100] border-b border-brand bg-surface max-lg:bg-surface lg:bg-surface/95 lg:backdrop-blur-lg">
       <div className="h-1 bg-gradient-to-r from-fly-navy via-fly-blue to-fly-cyan" />
       <Container className="flex items-center justify-between gap-4 py-3 sm:py-4 lg:py-5">
-        <div className="shrink-0 origin-left scale-90 sm:scale-100">
+        <div className="shrink-0 origin-left scale-90 sm:scale-100 logo-breathe">
           <Logo height={48} />
         </div>
 
@@ -19,7 +19,7 @@ export function Header() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="rounded-lg px-4 py-2 text-sm font-medium text-on-dark-muted transition-all duration-200 hover:bg-fly-light/50 hover:text-fly-sky"
+                  className="nav-link-animated rounded-lg px-4 py-2 text-sm font-medium text-on-dark-muted transition-all duration-200 hover:bg-fly-light/50 hover:text-fly-sky"
                 >
                   {item.label}
                 </Link>
@@ -31,9 +31,9 @@ export function Header() {
         <div className="flex items-center gap-3">
           <Link
             href="/contact"
-            className="btn-shine btn-primary hidden rounded-xl px-5 py-2.5 text-sm font-semibold lg:inline-block"
+            className="btn-shine btn-primary btn-ripple hidden rounded-xl px-5 py-2.5 text-sm font-semibold lg:inline-block"
           >
-            Get a Quote
+            Contact Us
           </Link>
           <MobileMenu />
         </div>

@@ -6,7 +6,7 @@ import { Logo } from "@/components/ui/Logo";
 
 export function Footer() {
   const { contact, social } = siteConfig;
-  const fullAddress = `${contact.address.street}, ${contact.address.city}, ${contact.address.state} ${contact.address.zip}`;
+  const fullAddress = `${contact.address.street}, ${contact.address.city}${contact.address.state ? `, ${contact.address.state}` : ""} ${contact.address.zip}, ${contact.address.country}`;
 
   return (
     <footer className="bg-brand-footer text-on-dark-muted">
@@ -28,7 +28,7 @@ export function Footer() {
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className="text-sm transition-colors hover:text-fly-cyan"
+                  className="footer-link text-sm transition-colors hover:text-fly-cyan"
                 >
                   {item.label}
                 </Link>

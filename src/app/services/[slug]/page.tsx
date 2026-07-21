@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/seo/JsonLd";
@@ -69,10 +70,20 @@ export default async function ServiceDetailPage({ params }: Props) {
           </nav>
           <div className="flex items-start gap-6">
             <span
-              className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-fly-cyan/30 bg-fly-cyan/10 text-5xl backdrop-blur-sm"
+              className="flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl border border-fly-cyan/30 bg-fly-cyan/10 backdrop-blur-sm"
               aria-hidden="true"
             >
-              {service.icon}
+              {service.image ? (
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  width={56}
+                  height={56}
+                  className="object-contain"
+                />
+              ) : (
+                <span className="text-5xl">{service.icon}</span>
+              )}
             </span>
             <div>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">

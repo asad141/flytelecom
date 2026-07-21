@@ -12,7 +12,7 @@ export function StatsBar() {
           {stats.map((stat, index) => (
             <AnimateOnScroll key={stat.label} delay={index * 100}>
               <div className="text-center">
-                <dd className="text-4xl font-bold text-white lg:text-5xl">
+                <dd className="number-glow stat-value text-4xl font-bold lg:text-5xl">
                   {stat.value}
                 </dd>
                 <dt className="mt-2 text-sm font-medium text-on-dark-muted">
