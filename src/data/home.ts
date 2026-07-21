@@ -1,6 +1,6 @@
 export const heroContent = {
-  headline: "The Messaging Partner That Connects Your Business to the World",
-  headlineHighlight: "Connects Your Business to the World",
+  headline: "The Messaging Partner Connecting Your Business to the World",
+  headlineHighlight: "Connecting Your Business to the World",
   subheadline:
     "Fly Telecom is a trusted global provider of A2P and omnichannel messaging services. Backed by deep industry expertise, we help businesses deliver SMS, WhatsApp, Viber, Telegram, and RCS messages reliably, driving real value and growth for our partners worldwide.",
   ctaPrimary: { label: "Get a Free Quote", href: "/contact" },

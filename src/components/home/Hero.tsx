@@ -14,10 +14,13 @@ export function Hero() {
 
       <Container className="relative grid items-center gap-12 py-12 lg:grid-cols-2 lg:gap-16 lg:py-16">
         <AnimateOnScroll direction="up">
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl xl:text-7xl">
+          <h1 className="text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl xl:text-6xl">
             {heroContent.headline.replace(heroContent.headlineHighlight, "")}
             <span className="animated-gradient-text">{heroContent.headlineHighlight}</span>
           </h1>
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-on-dark-muted sm:text-xl">
+            {heroContent.subheadline}
+          </p>
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <Link
               href="/contact"
